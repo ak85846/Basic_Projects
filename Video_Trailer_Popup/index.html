@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video_Trailer_Popup</title>
+    <!-- //it is from the cdnjs for fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <img src="https://images.pexels.com/photos/3131971/pexels-photo-3131971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="movie image">
+    <h1>Movie Title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, cumque tenetur repellat accusamus quam reiciendis similique maxime commodi ut suscipit soluta explicabo architecto aliquid animi cum aperiam accusantium delectus obcaecati.</p>
+    <button class="btn">Watch now</button>
+</div>  
+<div class="trailer-container active">
+    <!-- controls is for pause play option these vedeos and images are from pexels.com-->
+    <video src="trailer.mp4" controls></video>
+    <!-- this is to close the trailer popup and it is from fontawesome.com but to work this code we have to link it with the help of cdnjs.com     fa-2x to double the size of icon-->
+    <i class="fa-solid fa-square-xmark fa-2x close-icon"></i>
+
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>

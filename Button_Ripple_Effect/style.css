@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  display: flex;
+  /* for make element in center horizontally  */
+  justify-content: center;
+  height: 100vh;
+  /* for make element in center vertically  */
+  align-items: center;
+  background-color: lightcyan;
+  font-family: sans-serif;
+}
+.btn {
+  background-color: pink;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* to remove the underline  */
+  text-decoration: none;
+  color: black;
+  position: relative;
+  /* it will hide extra hover  */
+  overflow: hidden;
+}
+.btn span {
+  position: relative;
+  /* to see the button text during and after hover  */
+  z-index: 1;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  background-color: orangered;
+  width: 0;
+  height: 0;
+  /* we are making the position of hover starting point dynamic by making it variable later we set the value with the help of js  */
+  left: var(--xPos);
+  top: var(--yPos);
+  /* to place it in center we use transform  */
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* to have riple effect smoothly */
+  transition: width 0.5s, height 0.5s;
+}
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
